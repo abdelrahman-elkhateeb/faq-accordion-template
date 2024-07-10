@@ -1,11 +1,11 @@
 function Heading() {
   return (
-    <div>
+    <div className="flex items-center gap-5">
       <div>
         <img src="/src/assets/images/icon-star.svg" alt="" />
       </div>
-      
-      <h1>FAQs</h1>
+
+      <h1 className="text-darkPurple font-bold text-5xl">FAQs</h1>
     </div>
   );
 }

@@ -10,16 +10,19 @@ function App() {
     async function getQuestions() {
       const data = await fetch("http://localhost:8000/questions");
       const questions = await data.json();
-      console.log(questions);
       setQuestions(questions);
     }
     getQuestions();
   }, []);
 
   return (
-    <div className="container">
-      <Heading />
-      <Questions questions={questions} />
+    <div className="bg-[url('/src/assets/images/background-pattern-desktop.svg')] bg-no-repeat bg-contain bg-custom grid place-items-center min-h-screen bg-lightPink">
+
+      <div className="bg-white rounded-2xl p-8">
+        <Heading />
+        <Questions questions={questions} />
+      </div>
+
     </div>
   );
 }
