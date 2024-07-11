@@ -9,11 +9,13 @@ function Questions({ questions }) {
       {questions.map((question) => (
         <details
           key={question.id}
-          className="cursor-pointer p-5 [&:not(:last-child)]:border-b border-lightPink w-[445px] ease-in-out duration-300"
-          onClick={() => setIsOpen(!isOpen)}
+          className="cursor-pointer p-5 [&:not(:last-child)]:border-b border-lightPink md:w-[445px]  ease-in-out duration-300"
         >
           <summary className="flex justify-between">
-            <h3 className="text-darkPurple font-bold hover:text-[#a23ae6]">
+            <h3
+              className="text-darkPurple font-bold hover:text-[#a23ae6]"
+              onClick={() => setIsOpen(!isOpen)}
+            >
               {question.question}
             </h3>
 
