@@ -1,6 +1,5 @@
-import { useState } from "react";
+import plusImg from "../assets/images/icon-plus.svg";
 function Questions({ questions }) {
-
   return (
     <ul>
       {questions.map((question) => (
@@ -14,7 +13,7 @@ function Questions({ questions }) {
             </h3>
 
             <span className="w-8">
-              <img src="/src/assets/images/icon-plus.svg" alt="plus" />
+              <img src={plusImg} alt="plus" />
             </span>
           </summary>
 
